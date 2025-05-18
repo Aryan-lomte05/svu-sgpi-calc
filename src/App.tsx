@@ -136,6 +136,7 @@ import SGPIResult from "./components/SGPIResult";
 import CalculationChart from "./components/CalculationChart";
 import GradeTable from "./components/GradeTable";
 import TargetSGPI from "./components/TargetSGPI";
+import { Analytics } from "@vercel/analytics/react"
 import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
@@ -191,6 +192,7 @@ function App() {
       <div className="fixed top-4 right-4 z-50 bg-[#00FFD0] text-[#181A1B] px-5 py-2 rounded-full font-extrabold shadow-lg border-2 border-[#00A0FF] text-lg tracking-wider">
         Aryan Lomte CSBS
       </div>
+
       {/* Mobile/Desktop mode toggle */}
       <button
         onClick={() => setMobileMode(m => !m)}

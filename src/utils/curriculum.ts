@@ -27,7 +27,8 @@ export const curriculum: Curriculum = {
   "First Year": {
     "Semester 1": {
       "P": [
-        { code: "216U06C101", name: "Applied Mathematics – I", credits: 4, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06C101", name: "Applied Mathematics – I", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06T101", name: "Applied Mathematics TUT", credits: 1, marking: { LabCA: 25, total: 25 }, type: "Lab" },
         { code: "216U06C102", name: "Engineering Physics", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06C104", name: "Engineering Mechanics", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06L101", name: "Python Programming", credits: 3, marking: { LabCA: 75, total: 75 }, type: "Lab" },
@@ -39,7 +40,8 @@ export const curriculum: Curriculum = {
         { code: "216U06X101", name: "Exposure Course", credits: 0, marking: { total: 0 }, type: "Exposure" },
       ],
       "C": [
-        { code: "216U06C101", name: "Applied Mathematics – I", credits: 4, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06C101", name: "Applied Mathematics – I", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06T101", name: "Applied Mathematics TUT", credits: 1, marking: { LabCA: 25, total: 25 }, type: "Lab" },
         { code: "216U06C103", name: "Engineering Chemistry", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06C105", name: "Engineering Drawing", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06C106", name: "Elements of Electrical and Electronics Engineering", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
@@ -54,7 +56,8 @@ export const curriculum: Curriculum = {
     },
     "Semester 2": {
       "P": [
-        { code: "216U06C201", name: "Applied Mathematics – II", credits: 4, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06C201", name: "Applied Mathematics – II", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06T101", name: "Applied Mathematics TUT", credits: 1, marking: { LabCA: 25, total: 25 }, type: "Lab" },
         { code: "216U06C103", name: "Engineering Chemistry", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06C105", name: "Engineering Drawing", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06C106", name: "Elements of Electrical and Electronics Engineering", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
@@ -67,7 +70,8 @@ export const curriculum: Curriculum = {
         { code: "216U06X101", name: "Exposure Course", credits: 0, marking: { total: 0 }, type: "Exposure" },
       ],
       "C": [
-        { code: "216U06C201", name: "Applied Mathematics – II", credits: 4, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06C201", name: "Applied Mathematics – II", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
+        { code: "216U06T101", name: "Applied Mathematics TUT", credits: 1, marking: { LabCA: 25, total: 25 }, type: "Lab" },
         { code: "216U06C103", name: "Engineering Physics", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06C105", name: "Engineering Mechanics", credits: 3, marking: { CA: 20, InSem: 30, EndSem: 50, total: 100 }, type: "Theory" },
         { code: "216U06L103", name: "Engineering Physics Laboratory", credits: 1, marking: { LabCA: 50, total: 50 }, type: "Lab" },

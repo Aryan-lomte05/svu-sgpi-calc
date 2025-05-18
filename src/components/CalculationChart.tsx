@@ -1,44 +1,42 @@
-// src/components/CalculationChart.tsx
-// Table me marking scheme, animated fade-in
+// // src/components/CalculationChart.tsx
+// Marking scheme table with vibrant, readable palette and Hinglish comments
 
 import React from "react";
-import { motion } from "framer-motion";
 import type { Subject } from "../utils/curriculum";
 
 export default function CalculationChart({ subjects }: { subjects: Subject[] }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-      className="overflow-x-auto"
-    >
-      <table className="w-full text-left mt-4 border border-cyan-600 rounded-xl">
+    <div className="overflow-x-auto my-8">
+      {/* Table heading */}
+      <h2 className="text-2xl font-bold mb-2 text-[#00FFD0]">Marking Scheme Table</h2>
+      <table className="w-full text-left border border-[#004D61] rounded-xl bg-[#1C1C1C] shadow-xl">
         <thead>
-          <tr className="bg-cyan-900 text-fuchsia-200">
-            <th className="p-2">Subject</th>
-            <th>Credits</th>
-            <th>CA</th>
-            <th>InSem</th>
-            <th>EndSem</th>
-            <th>LabCA</th>
-            <th>Total</th>
+          <tr className="bg-[#004D61] text-[#F0F0F0]">
+            <th className="p-2 font-bold">Code</th>
+            <th className="font-bold">Name</th>
+            <th className="font-bold">Credits</th>
+            <th className="font-bold">CA</th>
+            <th className="font-bold">InSem</th>
+            <th className="font-bold">EndSem</th>
+            <th className="font-bold">LabCA</th>
+            <th className="font-bold">Total</th>
           </tr>
         </thead>
         <tbody>
           {subjects.map(sub => (
-            <tr key={sub.code} className="hover:bg-fuchsia-900/40 transition">
-              <td className="p-2">{sub.name}</td>
-              <td>{sub.credits}</td>
-              <td>{sub.marking.CA ?? "-"}</td>
-              <td>{sub.marking.InSem ?? "-"}</td>
-              <td>{sub.marking.EndSem ?? "-"}</td>
-              <td>{sub.marking.LabCA ?? "-"}</td>
-              <td>{sub.marking.total}</td>
+            <tr key={sub.code} className="hover:bg-[#22252A] transition">
+              <td className="p-2 font-mono text-[#00FFD0]">{sub.code}</td>
+              <td className="text-[#F0F0F0]">{sub.name}</td>
+              <td className="text-[#F5E8D8]">{sub.credits}</td>
+              <td className="text-[#FFB300]">{sub.marking.CA ?? "-"}</td>
+              <td className="text-[#FF6F61]">{sub.marking.InSem ?? "-"}</td>
+              <td className="text-[#00FFD0]">{sub.marking.EndSem ?? "-"}</td>
+              <td className="text-[#DAA520]">{sub.marking.LabCA ?? "-"}</td>
+              <td className="text-[#FFC1CC]">{sub.marking.total}</td>
             </tr>
           ))}
         </tbody>
       </table>
-    </motion.div>
+    </div>
   );
 }

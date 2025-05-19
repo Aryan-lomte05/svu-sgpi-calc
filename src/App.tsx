@@ -191,6 +191,7 @@ function App() {
       {/* Branding - Aryan Lomte CSBS */}
       <div className="fixed top-4 right-4 z-50 bg-[#00FFD0] text-[#181A1B] px-5 py-2 rounded-full font-extrabold shadow-lg border-2 border-[#00A0FF] text-lg tracking-wider">
         Aryan Lomte CSBS
+        <Analytics />
       </div>
 
       {/* Mobile/Desktop mode toggle */}

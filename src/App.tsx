@@ -126,9 +126,9 @@
 // }
 
 // export default App;
+import ParticleBG from "./components/ParticleBG";
 import React, { useState, useEffect } from "react";
 import { curriculum } from "./utils/curriculum";
-import ParticleBG from "./components/ParticleBG";
 import ThemeToggle from "./components/ThemeToggle";
 import GroupYearSemSelector from "./components/GroupYearSemSelector";
 import SubjectInputs from "./components/SubjectInputs";
@@ -172,7 +172,7 @@ function App() {
   const tabBtn = (label: string, tabName: typeof tab) => (
     <motion.button
       whileTap={{ scale: 0.95 }}
-      whileHover={{ scale: 1.08, backgroundColor: "#00FFD0", color: "#181A1B" }}
+      whileHover={{ scale: 1.08 }}
       className={`px-4 py-2 rounded-xl font-bold transition-all duration-200 bg-[#22252A] text-[#00FFD0] shadow-lg border-2 border-[#00FFD0] ${
         tab === tabName ? "bg-[#00FFD0] text-[#181A1B] border-[#FF007F]" : ""
       }`}
@@ -183,7 +183,7 @@ function App() {
   );
 
   return (
-    <div className={`relative min-h-screen ${darkMode ? "bg-[#181A1B]" : "bg-[#f0f0f0]"}`}>
+    <div className={"relative min-h-screen bg-transparent"}>
       {/* Animated particles background */}
       <ParticleBG />
       {/* Theme (dark/light) toggle */}
